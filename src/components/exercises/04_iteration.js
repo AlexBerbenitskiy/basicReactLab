@@ -2,11 +2,19 @@ import React from "react";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 const Demo = props => {
-  const list = props.modules.map((module, index) => {
+
+  const modules = [
+  
+  ]
+
+  const list = props.modules.map((module, id) => {
     return (
-      <tr key={index}>
-      Automotive
-      </tr>
+      <tr key={module.id}>
+      <td>{module.name}</td>
+      <td> {module.noLectures} </td>
+      <td> {module.noPracticals} </td>
+    </tr>
+      
     );
   });
   return (

@@ -11,6 +11,7 @@ const Demo = () => {
       noPracticals: 3
     },
     {
+      
       name: "Web App Dev",
       noLectures: 3,
       noPracticals: 2
