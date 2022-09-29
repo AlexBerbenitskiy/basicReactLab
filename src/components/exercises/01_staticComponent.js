@@ -2,27 +2,9 @@ import React from "react";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 const Demo = () => {
-  const course = "Applied Computing - Modules table";
-  const modules = [
-    {
-      name: "DevOps",
-      noLectures: 2,
-      noPracticals: 3
-    },
-    {
-      name: "Automotive",
-      noLectures: 3,
-      noPracticals: 2
-    },
-    {
-      name: "Web App Dev",
-      noLectures: 3,
-      noPracticals: 2
-    }
-  ];
   return (
     <div>
-      <h2>{course}</h2>
+      <h2>Applied Computing - Modules table</h2>
       <table className="table table-bordered">
         <thead>
           <tr>
@@ -33,19 +15,14 @@ const Demo = () => {
         </thead>
         <tbody>
           <tr>
-            <td>{modules[0].name}</td>
-            <td>{modules[0].noLectures}</td>
-            <td>{modules[0].noPracticals}</td>
+            <td>DevOps</td>
+            <td>2</td>
+            <td>3</td>
           </tr>
           <tr>
-            <td>{modules[1].name}</td>
-            <td>{modules[1].noLectures}</td>
-            <td>{modules[1].noPracticals}</td>
-          </tr>
-          <tr>
-            <td>{modules[2].name}</td>
-            <td>{modules[2].noLectures}</td>
-            <td>{modules[2].noPracticals}</td>
+            <td>Web App Dev</td>
+            <td>2</td>
+            <td>2</td>
           </tr>
         </tbody>
       </table>
